@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../JS/validar.js"></script>
+    <style>
+        label {
+            display: block;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+    <title>Validacion de formularios</title>
+</head>
+<body>
+    <h1>Formulario IES Doñana</h1>
+		<form name="formulario" id="f">
+			<label> Nombre:
+				<input type="text" name="nombre" placeholder='Xxxx' />
+			</label>
+			<label>Teléfono:
+				<input type="text" name='tel' placeholder="XXX-XXXXXX"/>
+			</label>
+			<label> Código postal:
+				<input type="text" name='cp' placeholder='XXXXX'  />
+			</label>
+			<label> Email:
+				<input type="text" name="email" placeholder='xxx@xxxx.xx'/>
+			</label>
+			<input type="submit" name='enviar' value="Enviar"/>
+		</form>
+</body>
+</html>
