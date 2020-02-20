@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery UI juego ordenable</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+    #sortable { 
+        margin: 0;
+        padding: 0;
+        width: 550px; 
+    }
+
+	#sortable li { 
+        list-style: none;
+        margin: 3px 3px 3px 0;
+        padding: 1px;
+        float: left;
+        width: 100px;
+        height: 90px;
+        font-size: 4em;
+        text-align: center;
+        border:1px solid; 
+    }
+
+	.oculto {
+        opacity: 0;
+    }
+    </style>
+    <script src="Act.JS"></script>
+</head>
+<body>
+    <div>
+        <ul id="sortable">
+            <li class="ui-state-default"><span class="oculto"></span></li>
+            <li class="ui-state-default"><span class="oculto"></span></li>
+            <li class="ui-state-default"><span class="oculto"></span></li>
+            <li class="ui-state-default"><span class="oculto"></span></li>
+            <li class="ui-state-default"><span class="oculto"></span></li>        
+        </ul>
+        <p></p>
+    </div>
+    <div>
+        <button id="comprobar">Comprobar</button>
+        <button id="nueva">Nueva Partida</button>
+    </div>
+</body>
+</html>

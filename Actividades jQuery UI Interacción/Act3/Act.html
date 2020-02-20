@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery UI juego ordenable</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Act.JS"></script>
+    <style>
+        #droppableJS {
+            width: 150px;
+            height: 100px;
+            border: solid 4px;
+            margin: 3%;
+            background: blue;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        #droppableJQ {
+            width: 150px;
+            height: 100px;
+            border: solid 4px;
+            margin: 3%;
+            background: blue;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .js {
+            width: 200px;
+            height: 50px;
+            border: solid 1px;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .jq {
+            width: 200px;
+            height: 50px;
+            border: solid 1px;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        #contenedor1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #contenedor2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #dialog {
+            border: solid 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="contenedor1">
+        <div id="droppableJS">
+            <p>Java Script</p>
+        </div>
+
+        <div id="droppableJQ">
+            <p>Jquery</p>
+        </div>
+    </div>
+    <div id="contenedor2">
+        <div class="jq">
+            <p>$('#selector')</p>
+        </div> 
+
+        <div class="js">
+            <p>getElementById()</p>
+        </div>
+
+        <div class="jq">
+            <p>$.each()</p>
+        </div>
+
+        <div class="js">
+            <p>send()</p>
+        </div>
+
+        <div class="jq">
+            <p>$.post()</p>
+        </div>
+    </div>
+
+    <div id="dialog" title="Has ganado">
+        <p>Enhorabuena has ganado!</p>
+    </div>
+</body>
+</html>
